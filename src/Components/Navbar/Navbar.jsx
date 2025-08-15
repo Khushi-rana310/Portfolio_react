@@ -16,6 +16,7 @@ const Navbar = () => {
             <li>Portfolio</li>
             <li>Contact Me</li>
         </ul>
+        <div className="nav-connect">Connect With Me</div>
     </div>
   )
 }
