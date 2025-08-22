@@ -64,17 +64,17 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
 }
 .about-achievement{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    transition: 0.5s;
+    gap: 20px;
+    transition: 0.3s;
 }
 .about-achievement h1{
-    font-size: 60px;
+    font-size: 45px;
     font-weight: 700;
     background: linear-gradient(270deg, #DF8908 50.41%, #B415FF 90.25%);
     background-clip: text;

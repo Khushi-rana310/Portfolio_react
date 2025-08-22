@@ -1,11 +1,11 @@
 import React from 'react'
 import './About.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
-import profile_img from '../../assets/about_profile.svg'
+import profile_img from '../../assets/circleK.jpg'
 
 const About = () => {
   return (
-    <div className="about">
+    <div id='about' className="about">
       <div className="about-title">
         <h1>About Me</h1>
         <img src={theme_pattern} alt="" />
@@ -48,7 +48,7 @@ const About = () => {
           <p>Tech stack: ReactJs, JavaScript, HTML, CSS, NextJs, Node.js</p>
         </div>
         <div className="about-achievement">
-          <h1>Selected for Infosys Springboard Artificial Intelligence Program</h1>
+          <h1>Selected for Infosys Springboard AI Program</h1>
           <p>Pragati: Path to Future cohort 3</p>
         </div>
         <div className="about-achievement">
