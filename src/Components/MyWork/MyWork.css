@@ -1,57 +1,113 @@
-.mywork{
+.mywork {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 80px;
     margin: 80px 170px;
+}
 
-}
-.mywork-title{
+.mywork-title {
     position: relative;
+    text-align: center;
 }
-.mywork-title h1{
+
+.mywork-title h1 {
     padding: 0px 30px;
     font-size: 80px;
     font-weight: 600;
 }
-.mywork-title img{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-}
-.mywork-container{
+
+/* Container grid responsive */
+.mywork-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
+    justify-items: center;
+    align-items: center;
 }
-.mywork-container img{
-    box-sizing: border-box;
-    width: 419px;
+
+.mywork-container img {
+    width: 100%;
+    max-width: 419px;
     height: 280px;
-    transition: 0.3s;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
     cursor: pointer;
 }
-.mywork-container img:hover{
-    transform: scale(1.10);
+
+.mywork-container img:hover {
+    transform: scale(1.05);
     border: 4px solid #ff00ff;
-    border-radius: 10px;
-    transition: 0.3s;
+    box-shadow: 0 15px 25px rgba(255, 0, 255, 0.3);
 }
-.mywork-showmore{
-    display:flex;
+
+.mywork-showmore {
+    display: flex;
     gap: 15px;
     border-radius: 50px;
     border: 2px solid white;
-    padding: 30px 60px;
-    font-weight: 22px;
+    padding: 20px 50px;
+    font-size: 22px;
     font-weight: 500;
     margin-bottom: 80px;
-    transition: 0.6s;
+    transition: all 0.6s;
     cursor: pointer;
 }
-.mywork-showmore:hover{
-   gap:  30px;
-   transition: 0.6s;
+
+.mywork-showmore img {
+    transition: transform 0.6s;
+}
+
+.mywork-showmore:hover {
+    gap: 30px;
+}
+
+.mywork-showmore:hover img {
+    transform: translateX(10px);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .mywork {
+        margin: 50px 50px;
+        gap: 50px;
+    }
+    .mywork-title h1 {
+        font-size: 60px;
+    }
+    .mywork-container img {
+        height: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mywork-title h1 {
+        font-size: 45px;
+    }
+    .mywork-container img {
+        height: 200px;
+    }
+    .mywork-showmore {
+        padding: 15px 40px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mywork {
+        margin: 30px 20px;
+        gap: 30px;
+    }
+    .mywork-title h1 {
+        font-size: 35px;
+    }
+    .mywork-container img {
+        height: 180px;
+    }
+    .mywork-showmore {
+        padding: 12px 30px;
+        font-size: 18px;
+    }
 }

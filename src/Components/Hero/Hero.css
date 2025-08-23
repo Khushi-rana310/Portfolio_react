@@ -4,9 +4,23 @@
     flex-direction: column;
     gap: 35px;
 }
-.hero img{
-    margin-top: 150px; 
+.hero img {
+  margin-top: 80px;   /* balanced spacing */
+  width: 220px;       /* bigger size */
+  height: 220px;      /* square with circle shape */
+  border-radius: 50%; /* perfect circle */
+  object-fit: cover;  /* crops neatly */
+  box-shadow: 0px 8px 25px rgba(180, 21, 255, 0.4); /* soft glowing shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Hover effect for appeal */
+.hero img:hover {
+  transform: scale(1.07);
+  box-shadow: 0px 15px 35px rgba(223, 137, 8, 0.6);
+}
+
+
 .hero h1{
     text-align: center;
     width: 70%;
