@@ -16,8 +16,8 @@ const About = () => {
         </div>
         <div className="about-right">
           <div className="about-para">
-            <p>I am experienced Frontend Developer with the strong background of React.js and other frontend technologies such as HTML, CSS, JavaScript, Express</p>
-            <p>My passion for frontend not only for the job and getting placement. </p>
+            <p>Beyond coding, I thrive on solving complex problems, exploring emerging technologies, and continuously improving my skillset. I am passionate about building products that are not only functional but also delightful to use.</p>
+            <p>I enjoy learning new frameworks, contributing to innovative projects </p>
           </div>
           <div className="about-skills">
             <div className="about-skill">

@@ -6,6 +6,7 @@ import MyWork from './Components/MyWork/MyWork'
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
 import Program from './Components/Program/Program'
+import Patent from './Components/Patent/Patent'
 
 const App = () => {
   return (
@@ -13,8 +14,9 @@ const App = () => {
       <Navbar/>
       <Hero/>
       <About/>
-      <Program/>
       <MyWork/>
+      <Program/>
+      <Patent/>
       <Contact/>
       <Footer/>
     </div>

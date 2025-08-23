@@ -4,7 +4,13 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
-    margin: 80px 170px;
+    margin: 0; /* Remove side margin to span full width */
+    padding: 80px 20px; /* Add padding inside the section */
+    background: linear-gradient(135deg, #080808 0%, #2A2A3D 100%);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(14, 13, 13, 0.844);
+    width: 100%;
+    color: #fff; /* Text color for contrast */
 }
 
 .about-title {
@@ -22,6 +28,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    
     z-index: -1;
 }
 
@@ -38,7 +45,9 @@
     height: 250px;
     object-fit: cover;
     border-radius: 50%; /* circular image */
-    transition: 0.3s;
+    box-shadow: 0px 8px 25px rgba(180, 21, 255, 0.4); /* soft glowing shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
 }
 
 .about-left img:hover {
