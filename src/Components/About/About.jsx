@@ -45,14 +45,14 @@ const About = () => {
       <div className="about-achievements">
         <div className="about-achievement">
           <h1>10+ Projects Completed</h1>
-          <p>Tech stack: ReactJs, JavaScript, HTML, CSS, NextJs, Node.js</p>
+          <p>Tech stack: ReactJs, JavaScript, HTML, CSS, NextJs, Node.js, MongoDB, firestore</p>
         </div>
         <div className="about-achievement">
           <h1>Selected for Infosys Springboard AI Program</h1>
           <p>Pragati: Path to Future cohort 3</p>
         </div>
         <div className="about-achievement">
-          <h1>180+ Leetcode Question Solved</h1>
+          <h1>200 Leetcode Question Solved</h1>
           <p>Solved Leetcode Question</p>
         </div>
         <div className="about-achievement">
